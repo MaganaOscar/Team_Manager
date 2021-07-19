@@ -11,6 +11,7 @@ function App() {
       <Router>
         {/* <Index path="/"/> */}
         <Main path="/players/list"/>
+        <Create path="/players/addplayer"/>
       </Router>
     </div>
   );

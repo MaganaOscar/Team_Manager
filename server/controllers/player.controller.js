@@ -13,7 +13,7 @@ module.exports.createPlayer = (req, res) => {
         name,
         preferredPos
     })
-        .then(player => res.json(author))
+        .then(player => res.json(player))
         .catch(err => res.status(400).json({message:"Create failed", error: err}));
 }
 

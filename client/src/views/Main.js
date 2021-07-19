@@ -21,7 +21,7 @@ const Main = () => {
     }
 
     const deletePlayer = (playerId) => {
-        axios.delete('http://localhost:8000/api/player' + playerId)
+        axios.delete('http://localhost:8000/api/player/' + playerId)
             .then(res => {
                 removeFromDom(playerId)
             })
@@ -35,7 +35,7 @@ const Main = () => {
         </div>
         <div>
             <div>
-                <Link to="/players/list">List</Link> | <Link to="/addplayer">Add Player</Link>
+                <Link to="/players/list">List</Link> | <Link to="/players/addplayer">Add Player</Link>
             </div>
             <div>
                 {loaded &&
